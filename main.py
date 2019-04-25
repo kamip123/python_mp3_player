@@ -24,6 +24,7 @@ def update_song_name():
     slider_song_length.configure(to=int(song.info.length))
     song_length = datetime.timedelta(seconds=int(song.info.length))
     song_time.set(str(song_length))
+    slider_song_length.set(0)
     global is_pause
     is_pause = False
 
